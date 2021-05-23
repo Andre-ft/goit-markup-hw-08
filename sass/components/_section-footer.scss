@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--primary-bacgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__container {
+  display: flex;
+}
