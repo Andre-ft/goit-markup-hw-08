@@ -17,7 +17,8 @@
 }
 
 .subscribe__form-input {
-  width: 358px;
+  min-width: 100%;
+  max-width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -41,5 +42,9 @@
   @media screen and (max-width: 1199.9px) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
