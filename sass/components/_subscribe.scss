@@ -1,9 +1,16 @@
 .subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
 }
 
 .subscribe-container {
+  text-align: center;
+
   @media screen and (min-width: 767.9px) {
     display: flex;
   }
@@ -29,5 +36,10 @@
 
   &:focus {
     border-color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199.9px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

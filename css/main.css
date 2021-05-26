@@ -153,10 +153,25 @@ img {
   color: #ffffff;
 }
 
-.logo--footer {
-  display: inline-block;
-  margin: 0 0 20px 0;
+.logo.logo--footer {
   padding: 0;
+}
+
+@media screen and (max-width: 1199.9px) {
+  .logo.logo--footer {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 154px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.logo--footer {
+    display: inline-block;
+    margin: 0 0 20px 0;
+  }
 }
 
 .navigation {
@@ -255,7 +270,7 @@ img {
 }
 
 @media screen and (max-width: 767.9px) {
-  .auth-nav,
+  .auth-nav.page-header__auth-nav,
   .navigation__menu {
     display: none;
   }
@@ -693,15 +708,37 @@ img {
   color: #ffffff;
   padding: 0;
   margin: 0 0 9px 0;
+  text-align: center;
 }
 
 .join-block {
-  margin-left: 70px;
   padding-top: 12px;
 }
 
-.join-block__social-links {
-  margin-left: 0;
+@media screen and (max-width: 1199.9px) {
+  .join-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-block {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .join-block__social-links {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-block__social-links {
+    margin-left: 0;
+  }
 }
 
 .join__title,
@@ -714,9 +751,27 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199.9px) {
+  .join__title,
+  .subscribe__title {
+    text-align: center;
+  }
+}
+
 .subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
+
+.subscribe-container {
+  text-align: center;
 }
 
 @media screen and (min-width: 767.9px) {
@@ -747,8 +802,16 @@ img {
   border-color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199.9px) {
+  .subscribe__form-input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .submit-button {
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 28px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -768,6 +831,12 @@ img {
 
 .submit-button:hover, .submit-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-button {
+    margin-left: 12px;
+  }
 }
 
 .submit-button__icon-send {
