@@ -269,6 +269,12 @@ img {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 1199.9px) {
+  .auth-nav__item--footer {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 767.9px) {
   .auth-nav.page-header__auth-nav,
   .navigation__menu {
