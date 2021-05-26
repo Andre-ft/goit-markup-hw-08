@@ -254,7 +254,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .auth-nav,
   .navigation__menu {
     display: none;
@@ -679,8 +679,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+  }
 }
 
 .address {
@@ -717,8 +719,10 @@ img {
   padding-top: 12px;
 }
 
-.subscribe-container {
-  display: flex;
+@media screen and (min-width: 767.9px) {
+  .subscribe-container {
+    display: flex;
+  }
 }
 
 .subscribe__form-input {
