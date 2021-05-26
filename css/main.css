@@ -170,13 +170,6 @@ img {
   vertical-align: middle;
 }
 
-.auth-nav,
-.navigation__menu {
-  font-weight: 500;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-}
-
 .auth-nav__item:not(:last-child),
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -252,6 +245,20 @@ img {
 
 .auth-nav__first {
   margin: 0 0 9px 0;
+}
+
+.auth-nav,
+.navigation__menu {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 768px) {
+  .auth-nav,
+  .navigation__menu {
+    display: none;
+  }
 }
 
 .hero {
