@@ -327,6 +327,12 @@ img {
 
 @media screen and (min-width: 480px) {
   .feature-list__item {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list__item {
     width: calc((100% - 30px) / 2);
   }
   .feature-list__item:nth-child(2n) {
@@ -334,7 +340,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .feature-list__item {
     width: calc((100% - 90px) / 4);
   }
@@ -374,6 +380,12 @@ img {
   margin: 0;
 }
 
+@media screen and (max-width: 1199.9px) {
+  .section.what-we-doing {
+    display: none;
+  }
+}
+
 .what-we-doing__list {
   display: flex;
 }
@@ -401,8 +413,11 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.our-team {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .our-team__title {
@@ -431,15 +446,28 @@ img {
 }
 
 .our-team__item {
-  width: calc((100% - 90px) / 4);
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
 
-.our-team__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .our-team__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .our-team__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .social-links {
@@ -581,13 +609,38 @@ img {
   display: flex;
 }
 
-.regular-customers__item {
-  width: 170px;
-  height: 92px;
+@media screen and (max-width: 1199.9px) {
+  .regular-customers {
+    flex-wrap: wrap;
+  }
 }
 
-.regular-customers__item:not(:first-child) {
-  margin-left: 30px;
+.regular-customers__item {
+  width: calc((100% - 30px) / 2);
+}
+
+@media screen and (max-width: 767.9px) {
+  .regular-customers__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .regular-customers__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .regular-customers__item:not(:nth-child(3n-2)) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .regular-customers__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .regular-customers__link {
