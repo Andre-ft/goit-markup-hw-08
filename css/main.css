@@ -119,12 +119,20 @@ img {
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   color: var(--title-text-color);
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin: 0 0 50px 0;
+  }
 }
 
 .page-header {
@@ -552,6 +560,8 @@ img {
 }
 
 .our-team__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -581,6 +591,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .our-team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
