@@ -129,16 +129,30 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 767.9px) {
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover, .logo:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__web {
@@ -177,6 +191,7 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .page-header__logo,
@@ -198,6 +213,22 @@ img {
 .navigation__menu {
   margin-left: 93px;
   display: flex;
+}
+
+.hamburger-btn {
+  margin-left: auto;
+  fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-btn:hover, .hamburger-btn:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
 }
 
 .page-header__auth-nav {
@@ -321,11 +352,11 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
   background-repeat: no-repeat;
@@ -334,16 +365,31 @@ img {
   background-color: var(--hero-bg-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 .hero__button {
