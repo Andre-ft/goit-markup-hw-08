@@ -33,14 +33,20 @@
   border-color: var(--accent-color);
 }
 
-.checkbox__agreement {
-  line-height: 1.714;
-}
+// .checkbox__agreement {
+//   line-height: 1.714;
+// }
 
 .checkbox__agreement,
 .checkbox__terms {
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.714;
+    font-size: 14px;
+  }
 }
 
 .checkbox__terms {

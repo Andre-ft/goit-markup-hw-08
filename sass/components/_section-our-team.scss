@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-bottom: -30px;
+  }
 }
 
 .our-team__title {
@@ -38,6 +42,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (max-width: 767.9px) {
     &:not(:last-child) {
