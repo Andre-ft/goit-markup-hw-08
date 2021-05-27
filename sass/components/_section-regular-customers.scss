@@ -9,6 +9,7 @@
 
 .regular-customers__item {
   width: calc((100% - 30px) / 2);
+  height: 92px;
   margin-bottom: 30px;
 
   @media screen and (max-width: 767.9px) {
