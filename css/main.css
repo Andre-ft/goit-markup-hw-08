@@ -421,8 +421,10 @@ img {
   background-color: #fff;
 }
 
-.section--feature {
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .section--feature {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -440,6 +442,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--second-backgr-color);
+}
+
+@media screen and (max-width: 768px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -489,6 +497,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__list-text {

@@ -1,5 +1,7 @@
 .section--feature {
-  padding-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .feature-list {
@@ -22,6 +24,13 @@
     background-position: center;
     background-color: var(--second-backgr-color);
   }
+
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -64,6 +73,10 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   padding-top: 30px;
+
+  @media screen and (max-width: 767.9px) {
+    text-align: center;
+  }
 }
 
 .feature-list__list-text {
