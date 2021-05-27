@@ -754,6 +754,7 @@ img {
 
 .regular-customers {
   display: flex;
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 1199.9px) {
@@ -764,6 +765,7 @@ img {
 
 .regular-customers__item {
   width: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767.9px) {
