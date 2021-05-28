@@ -43,6 +43,11 @@
   line-height: 1.167;
   letter-spacing: 0.03em;
 
+  @media screen and (max-width: 399.9px) {
+    font-size: 11px;
+    line-height: 1.71;
+  }
+
   @media screen and (min-width: 1200px) {
     line-height: 1.714;
     font-size: 14px;
