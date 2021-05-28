@@ -55,20 +55,25 @@
             </ul>
 
             <button 
-            type="button" 
-            class="hamburger-btn is-open" 
-            data-menu-button
-            aria-expanded="false"
+                type="button" 
+                class="hamburger-btn is-open" 
+                data-menu-button
+                aria-expanded="false"
+                aria-controls="menu-container"
             >
                 <svg 
-                width="40" 
-                height="40"
-                aria-label="Переключатель мобильного меню"
+                    width="40" 
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
                 >
                     <use class="icon-menu" href="../images/icons.svg#icon-hamburger-btn"></use>
                     <use class="icon-cross" href="../images/icons.svg#icon-cross-btn"></use>
                 </svg>
-            </button>            
+            </button>  
+            
+            <div class="menu-container" id="menu-container" data-menu>
+                контент меню
+            </div>
         </div>
     </header>
 
