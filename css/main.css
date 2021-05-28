@@ -231,7 +231,11 @@ img {
 }
 
 .hamburger-btn {
+  display: inline-flex;
   margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -244,6 +248,18 @@ img {
   .hamburger-btn {
     display: none;
   }
+}
+
+.hamburger-btn .icon-cross {
+  display: none;
+}
+
+.hamburger-btn.is-open .icon-cross {
+  display: block;
+}
+
+.hamburger-btn.is-open .icon-menu {
+  display: none;
 }
 
 .page-header__auth-nav {
