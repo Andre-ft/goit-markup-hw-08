@@ -46,6 +46,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -1349,10 +1353,6 @@ img {
   font-size: 20px;
 }
 
-.menu-container.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767.9px) {
   .menu-container {
     display: none;
@@ -1361,9 +1361,12 @@ img {
     left: 0;
     width: 100%;
   }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
   }
