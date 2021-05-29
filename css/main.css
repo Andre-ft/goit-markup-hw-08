@@ -49,6 +49,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.is-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -1057,6 +1061,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  position: relative;
   z-index: 1;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
@@ -1438,6 +1443,7 @@ img {
   .menu-container {
     display: none;
     position: fixed;
+    z-index: 9;
     top: 0%;
     left: 0;
     width: 100%;
